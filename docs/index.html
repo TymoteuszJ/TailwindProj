@@ -8,60 +8,135 @@
 </head>
 <body class="bg-gray-100 p-8">
 
-  <!-- Nagłówek -->
-  <h1 class="text-3xl font-bold text-sky-500 mb-4 shadow-md p-2 bg-white">
-    Tailwind CSS - Zadanie Demo
+  <!-- Nagłówek z opcajmi: Rozmiar czcionki, Pogrubienie tekstu, 
+   Kolor tekstu, Margines dolny, Średni cień, wewnętrzny margines, Tło białe-->
+  <h1 class="text-3xl font-bold text-purple-900 mb-4 shadow-md p-2 bg-white">
+    Tailwind CSS - Zadanie Blok 2
   </h1>
 
   <!-- Tekst w różnych kolorach -->
-  <p class="text-red-500">To jest czerwony tekst.</p>
-  <p class="text-green-500">To jest zielony tekst.</p>
-  <a href="#" class="text-blue-600 underline">To jest niebieski link</a>
+  <p class="text-red-500">
+    To jest czerwony tekst.<br>
+    Czerwony tekst ciągnie się przez tą<br>
+    jeszcze tą<br>
+    a również następną linijkę<br>
+    czyli o tu.
+  </p>
+  <p class="text-green-500">
+    Tekst ten równie dobrze może być zielony<br>
+    i następne informacje mogą być przedstawione w tym kolorze.<br>
+    Jednak poniżej widoczny linki mogą być np. innego koloru tak jak widać poniżej.<br>
+  </p>
+  <a href="https://github.com/TymoteuszJ/TailwindProj" class="text-blue-600 underline">niebieski link do repozytorium</a>
 
-  <!-- Tła w różnych kolorach -->
-  <div class="mt-6 space-y-2">
-    <div class="bg-yellow-200 p-4">Tło żółte</div>
-    <div class="bg-sky-300 p-4">Tło niebieskie</div>
-    <div class="bg-pink-200 p-4">Tło różowe</div>
+  <h1 class="text-3xl font-bold text-purple-900 mb-4 mt-16 shadow-md p-2 bg-white">
+    Kolory - Jan Brzechwa
+  </h1>
+
+  <p class="text-black">Malarz wciąż zachodził w głowę:</p>
+  <p class="text-gray-800">Są kolory i odcienie,</p>
+  <p class="text-gray-700">Każdy inną ma wymowę,</p>
+  <p class="text-gray-600">Każdy jakieś ma znaczenie.</p>
+<!-- Tła w różnych kolorach -->
+<div class="mt-6 space-y-2">
+  <div class="bg-red-400 p-4">
+    <p class="text-black">Aż podsłuchał raz w farbiarni,</p>
+    <p class="text-gray-800">Jak sprzeczały się kolory:</p>
+    <p class="text-gray-700">„Żółty trzyma się najmarniej,</p>
+    <p class="text-gray-600">Żółty jest na zazdrość chory”.</p>
   </div>
+  
+  <div class="bg-yellow-200 p-4">
+    <p class="text-black">„Też gadanie… Zresztą zgoda,</p>
+    <p class="text-gray-800">Mnie zazdrosne lubią żony,</p>
+    <p class="text-gray-700">Taka jest w tym roku moda:</p>
+    <p class="text-gray-600">Żółty kolor, nie czerwony”..</p>
+  </div>
+  
+  <div class="bg-black p-4">
+    <p class="text-gray-200">Mruknął czarny: „Czy należy</p>
+    <p class="text-gray-300">W takie wdawać się rozmowy?.</p>
+    <p class="text-gray-400">Jak czerwony się zaperzy,</p>
+    <p class="text-gray-500">To się robi fioletowy”.</p>
+  </div>
+
+  <div class="bg-purple-300 p-4">
+    <p class="text-black">„Zamilcz! Wszystkim się podoba</p>
+    <p class="text-gray-800">Modny kolor fioletowy,</p>
+    <p class="text-gray-700">A ty jesteś co? Żałoba!</p>
+    <p class="text-gray-600">Ciebie lubią tylko wdowy”.</p>
+  </div>
+</div>
+
+<a href="https://wiersze.juniora.pl/brzechwa/brzechwa_k12.html#dalej2" class="text-blue-600 underline">Wiersz Brzechwy o kolorach</a>
 
   <!-- Tabela -->
   <table class="table-auto mt-6 border-collapse border border-gray-400">
     <thead>
       <tr>
-        <th class="border border-gray-300 px-4 py-2">Imię</th>
-        <th class="border border-gray-300 px-4 py-2">Wiek</th>
+        <th class="border border-gray-300 px-4 py-2">Color</th>
+        <th class="border border-gray-300 px-4 py-2">Class name</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="border border-gray-300 px-4 py-2">Anna</td>
-        <td class="border border-gray-300 px-4 py-2">23</td>
+        <td class="border border-red-600 px-4 py-2">Red</td>
+        <td class="border border-red-600 px-4 py-2">red-600</td>
       </tr>
       <tr>
-        <td class="border border-gray-300 px-4 py-2">Bartek</td>
-        <td class="border border-gray-300 px-4 py-2">29</td>
+        <td class="border border-yellow-400 px-4 py-2">Yellow</td>
+        <td class="border border-yellow-400 px-4 py-2">yellow-400</td>
+      </tr>
+      <tr>
+        <td class="border border-black px-4 py-2">Black</td>
+        <td class="border border-black px-4 py-2">black</td>
+      </tr>
+      <tr>
+        <td class="border border-purple-500 px-4 py-2">Purple</td>
+        <td class="border border-purple-500 px-4 py-2">purple-500</td>
       </tr>
     </tbody>
   </table>
 
   <!-- Animacja ping -->
   <div class="relative mt-6">
-    <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-sky-400 opacity-75"></span>
-    <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+    <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-blue-400 opacity-75"></span>
+    <span class="relative inline-flex rounded-full h-4 w-4 bg-blue-500"></span>
     <span class="ml-6">Ładowanie...</span>
   </div>
 
-  <!-- Flex layout -->
-  <div class="flex mt-8 space-x-4">
-    <div class="flex-none bg-green-200 p-4">flex-none</div>
-    <div class="flex-auto bg-blue-200 p-4">flex-auto</div>
-  </div>
+<!-- Różnica między flex-row (domyślne) a flex-col -->
+<h2 class="text-xl font-semibold mb-2">flex-row</h2>
 
-  <div class="flex flex-col mt-6 space-y-2">
-    <div class="bg-purple-200 p-2">flex-col - 1</div>
-    <div class="bg-purple-300 p-2">flex-col - 2</div>
-  </div>
+<div class="flex flex-row mt-4 space-x-4">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+
+<h2 class="text-xl font-semibold mt-4">flex-col</h2>
+
+<div class="flex flex-col mt-4">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+
+<h2 class="text-xl font-semibold mt-4">flex-none vs flex-auto</h2>
+
+<div class="flex flex-row mt-4 space-x-4">
+  <div class="flex-none bg-green-200 p-4">flex-none</div>
+  <div class="flex-auto bg-blue-200 p-4">flex-auto</div>
+</div>
+<div class="flex flex-row mt-4 space-x-4">
+  <div class="flex-auto bg-blue-200 p-4">flex-auto</div>
+  <div class="flex-none bg-green-200 p-4">flex-none</div>
+</div>
+<div class="flex flex-row mt-4 space-x-4">
+  <div class="flex-auto bg-blue-200 p-4">flex-auto</div>
+  <div class="flex-none bg-green-200 p-4">flex-none</div>
+  <div class="flex-auto bg-blue-200 p-4">flex-auto</div>
+</div>
 
 </body>
 </html>
