@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/input.css -o dist/output.css"
+    "build:css": "postcss src/input.css -o docs/output.css"
   },
   "keywords": [],
   "author": "",
